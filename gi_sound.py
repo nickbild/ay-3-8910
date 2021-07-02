@@ -123,6 +123,20 @@ class GiSound:
 
         return
 
+    
+    def enable_envelope(self, chanA, chanB, chanC):
+        if chanA == 1:
+            self.set_address(8)  # Channel A
+            self.set_data(31)
+        if chanB == 1:
+            self.set_address(9)  # Channel B
+            self.set_data(31)
+        if chanC == 1:
+            self.set_address(10) # Channel C
+            self.set_data(31)
+
+        return
+
 
     ####
     # TONE
@@ -213,5 +227,33 @@ class GiSound:
     def set_noise(self, noise):
         self.set_address(6)
         self.set_data(noise)
+
+        return
+
+
+    #####
+    # ENVELOPE
+    ####
+
+    # Frequency is 0-65535.
+    def set_envelope_freq(self, freq):
+        freq_bin = format(freq, '016b')
+        coarse = int(freq_bin[0:8], 2)
+        fine = int(freq_bin[8:16], 2)
+
+        self.set_address(11)
+        self.set_data(fine)
+        self.set_address(12)
+        self.set_data(coarse)
+
+        return
+
+    
+    def set_envelope_shape(self, cont, attack, alternate, hold):
+        shape_val = "{}{}{}{}".format(cont, attack, alternate, hold)
+        shape_val = int(shape_val, 2)
+
+        self.set_address(13)
+        self.set_data(shape_val)
 
         return
