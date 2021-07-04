@@ -39,14 +39,29 @@ time.sleep(2)
 sound.volume_off()
 ```
 
+Further details are availble in the [library](https://github.com/nickbild/ay-3-8910/blob/main/gi_sound.py).
+
 ### Speech Synthesis
 
+I'm sure there are better ways to go about this (e.g. [Software Automatic Mouth](https://en.wikipedia.org/wiki/Software_Automatic_Mouth)), but I don't really understand them, so I said, "Dammit Jim, I'm a hacker, not a linguist" and came up with my own approach.
+
+I first created a [script](https://github.com/nickbild/ay-3-8910/blob/main/create_library.py) that would systematically make each tone/noise combination that the AY-3-8910 can produce, and record each as a .wav file.  Well, not quite everything possible; I only used 1 channel for tones (3 are available), and I didn't use any envelope functionalities.  The number of conditions would have grown exponentialy if I had done so, and I wasn't sure how much would be gained through their use.
+
+Next, I recorded the [target speech](https://github.com/nickbild/ay-3-8910/blob/main/greetings_mono.wav), "Greetings, Professor Falken."  I split this into 30 millisecond segments.  That seemed like a reasonable length to me for a minimal amount of sound that is perceivable, but I am making things up as I go along, so...
+
+After this, I generated spectrgrams for both the library of AY-3-8910 sounds, and the target sound clips.  Finally, I created another [script](https://github.com/nickbild/ay-3-8910/blob/main/compare_spectrograms.py) that compares each target sound to every available library sound, calcuate the mean squared error of the difference, and then reports back the best match.
+
+This results in a sequence of tone/noise segments to run sequentially on the AY-3-8910 to reproduce the target speech.  I did that [here](https://github.com/nickbild/ay-3-8910/blob/main/speech.py).  If you don't have an AY-3-8910 sitting around, you can listen to a .wav of the result [here](https://github.com/nickbild/ay-3-8910/blob/main/greetings_synthesized.wav?raw=true).
+
 ## Media
+
+Coming soon.
 
 ## Bill of Materials
 
 - 1 x Raspberry Pi 400, or similar
 - 1 x AY-3-8910 sound generator
+- 1 x 3.5mm jack to USB audio adapter
 - 1 x 2 MHz crystal oscillator
 - 1 x TRRS jack breakout board
 - 2 x 1 nF capacitor
