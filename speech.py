@@ -3,7 +3,7 @@ import time
 
 
 def main():
-    sound = GiSound(8, 10, 12, 16, 18, 22, 24, 26, 36, 38, 40)
+    sound = GiSound(d0=8, d1=10, d2=12, d3=16, d4=18, d5=22, d6=24, d7=26, bc1=36, bdir=38, reset=40)
 
     sound.set_volume(1, 1, 1)
     sound.set_mixer(1, 1, 1, 1, 1 ,1)
