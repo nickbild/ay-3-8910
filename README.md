@@ -49,7 +49,7 @@ I first created a [script](https://github.com/nickbild/ay-3-8910/blob/main/creat
 
 Next, I recorded the [target speech](https://github.com/nickbild/ay-3-8910/blob/main/greetings_mono.wav), "Greetings, Professor Falken."  I split this into 30 millisecond segments.  That seemed like a reasonable length to me for a minimal amount of sound that is perceivable, but I am making things up as I go along, so...
 
-After this, I generated spectrgrams for both the library of AY-3-8910 sounds, and the target sound clips.  Finally, I created another [script](https://github.com/nickbild/ay-3-8910/blob/main/compare_spectrograms.py) that compares each target sound to every available library sound, calcuate the mean squared error of the difference, and then reports back the best match.
+After this, I generated spectrgrams for both the library of AY-3-8910 sounds, and the target sound clips.  Finally, I created another [script](https://github.com/nickbild/ay-3-8910/blob/main/compare_spectrograms.py) that compares each target sound to every available library sound, calcuates the mean squared error of the difference, and then reports back the best match (i.e. lowest MSE).
 
 This results in a sequence of tone/noise segments to run sequentially on the AY-3-8910 to reproduce the target speech.  I did that [here](https://github.com/nickbild/ay-3-8910/blob/main/speech.py).  If you don't have an AY-3-8910 sitting around, you can listen to a .wav of the result [here](https://github.com/nickbild/ay-3-8910/blob/main/greetings_synthesized.wav?raw=true).
 
