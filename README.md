@@ -51,7 +51,9 @@ Next, I recorded the [target speech](https://github.com/nickbild/ay-3-8910/blob/
 
 After this, I generated spectrgrams for both the library of AY-3-8910 sounds, and the target sound clips.  Finally, I created another [script](https://github.com/nickbild/ay-3-8910/blob/main/compare_spectrograms.py) that compares each target sound to every available library sound, calcuates the mean squared error of the difference, and then reports back the best match (i.e. lowest MSE).
 
-This results in a sequence of tone/noise segments to run sequentially on the AY-3-8910 to reproduce the target speech.  I did that [here](https://github.com/nickbild/ay-3-8910/blob/main/speech.py).  If you don't have an AY-3-8910 sitting around, you can listen to a .wav of the result [here](https://github.com/nickbild/ay-3-8910/blob/main/greetings_synthesized.wav?raw=true).
+This results in a sequence of tone/noise segments to run sequentially on the AY-3-8910 to reproduce the target speech.  I did that [here](https://github.com/nickbild/ay-3-8910/blob/main/speech.py).  If you don't have an AY-3-8910 sitting around, you can listen to a .wav of the result [here](https://github.com/nickbild/ay-3-8910/blob/main/greetings_synthesized.wav?raw=true).  It's rough to be sure, but it is distinguishable.  And I don't want it to be too good, or it wouldn't be retro enough...at least that is what I like to tell myself.
+
+While this approach only allows the chip to say one phrase, the next step is fairly obvious.  I could take the same approach to generate sequences to reproduce all of the English phonemes.  From there, I could just string together phonemes as needed to syntesize any arbitrary speech.
 
 ## Media
 
@@ -62,6 +64,7 @@ Coming soon.
 - 1 x Raspberry Pi 400, or similar
 - 1 x AY-3-8910 sound generator
 - 1 x 3.5mm jack to USB audio adapter
+- 1 x Speaker (3.5mm jack input)
 - 1 x 2 MHz crystal oscillator
 - 1 x TRRS jack breakout board
 - 2 x 1 nF capacitor
