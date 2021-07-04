@@ -1,0 +1,12 @@
+#!/bin/bash
+
+python3 wav_to_spectrogram.py audio_library audio_library_spectrograms 0
+python3 wav_to_spectrogram.py audio_library audio_library_spectrograms 1
+python3 wav_to_spectrogram.py audio_library audio_library_spectrograms 2
+python3 wav_to_spectrogram.py audio_library audio_library_spectrograms 3
+python3 wav_to_spectrogram.py audio_library audio_library_spectrograms 4
+python3 wav_to_spectrogram.py audio_library audio_library_spectrograms 5
+python3 wav_to_spectrogram.py audio_library audio_library_spectrograms 6
+python3 wav_to_spectrogram.py audio_library audio_library_spectrograms 7
+python3 wav_to_spectrogram.py audio_library audio_library_spectrograms 8
+python3 wav_to_spectrogram.py audio_library audio_library_spectrograms 9

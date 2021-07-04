@@ -1,0 +1,23 @@
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_0-30.wav.jpg  > compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1020-1050.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1050-1080.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1080-1110.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1110-1140.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1140-1170.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1170-1200.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1200-1230.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_120-150.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1230-1260.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1260-1290.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1290-1320.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1320-1350.wav.jpg >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1350-1380.wav.jpg  >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1380-1410.wav.jpg  >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1410-1440.wav.jpg  >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1440-1470.wav.jpg  >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1470-1500.wav.jpg  >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1500-1530.wav.jpg  >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_150-180.wav.jpg  >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1530-1560.wav.jpg  >> compare_results_1.txt
+python3 -u compare_spectrograms.py audio_target_spectrograms/greetings_1560-1590.wav.jpg  >> compare_results_1.txt
+
