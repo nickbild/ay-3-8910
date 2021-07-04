@@ -2,6 +2,10 @@
 
 A Python library to control a General Instrument AY-3-8910 sound generator from a Raspberry Pi.  To demonstrate the abilities of the chip, I used it to synthesize speech.
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/nickbild/ay-3-8910/main/media/breadboard_close_sm.jpg">
+</p>
+
 ## How It Works
 
 ### Library
