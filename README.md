@@ -74,8 +74,6 @@ Full setup:
 Breadboard:
 ![Breadboard](https://github.com/nickbild/ay-3-8910/raw/main/media/breadboard_sm.jpg)
 
-Coming soon.
-
 ## Bill of Materials
 
 - 1 x Raspberry Pi 400, or similar
