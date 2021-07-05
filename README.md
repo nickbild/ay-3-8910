@@ -6,6 +6,8 @@ A Python library to control a General Instrument AY-3-8910 sound generator from 
 <img src="https://raw.githubusercontent.com/nickbild/ay-3-8910/main/media/breadboard_close_sm.jpg">
 </p>
 
+This sound chip was first produced in 1978, and was in arcade and pinball games, the Intellivision and Vectrex game consoles, and in sound cards for the Apple II and TRS-80 Color Computer.
+
 ## How It Works
 
 ### Library
@@ -60,7 +62,7 @@ After this, I generated spectrograms for both the library of AY-3-8910 sounds, a
 <br>Spectrogram
 </p>
 
-This results in a sequence of tone/noise segments to run sequentially on the AY-3-8910 to reproduce the target speech.  I did that [here](https://github.com/nickbild/ay-3-8910/blob/main/speech.py).  If you don't have an AY-3-8910 sitting around, you can listen to a .wav of the result [here](https://github.com/nickbild/ay-3-8910/blob/main/greetings_synthesized.wav?raw=true).  It's rough to be sure, but it is distinguishable.  And I don't want it to be too good, or it wouldn't be retro enough...at least that is what I like to tell myself.
+This results in a sequence of tone/noise segments to run sequentially on the AY-3-8910 to reproduce the target speech.  I did that [here](https://github.com/nickbild/ay-3-8910/blob/main/speech.py).  If you don't have an AY-3-8910 sitting around, you can listen to a .wav of the result [here](https://github.com/nickbild/ay-3-8910/blob/main/greetings_synthesized.wav?raw=true).  It's rough, to be sure, but it is distinguishable.  And I don't want it to be too good, or it wouldn't be retro enough...at least that is what I like to tell myself.  Seriously though, the first time I heard this I was very surprised that the beeps and hisses of the AY-3-8910 could be turned into speech at all and was quite pleased with the result.
 
 While this approach only allows the chip to say one phrase, the next step is fairly obvious.  I could take the same approach to generate sequences to reproduce all of the English phonemes.  From there, I could just string together phonemes as needed to synthesize any arbitrary speech.
 
