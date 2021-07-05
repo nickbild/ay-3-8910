@@ -51,7 +51,7 @@ Further details are availble in the [library](https://github.com/nickbild/ay-3-8
 
 I'm sure there are better ways to go about this (e.g. [Software Automatic Mouth](https://en.wikipedia.org/wiki/Software_Automatic_Mouth)), but I don't really understand them, so I said, "Dammit Jim, I'm a hacker, not a linguist" and came up with my own approach.
 
-I first created a [script](https://github.com/nickbild/ay-3-8910/blob/main/create_library.py) that would systematically make each tone/noise combination that the AY-3-8910 can produce, and record each as a .wav file.  Well, not quite everything possible; I only used 1 channel for tones (3 are available), and I didn't use any envelope functionalities.  The number of conditions would have grown exponentially if I had done so, and I wasn't sure how much would be gained through their use.
+I first created a [script](https://github.com/nickbild/ay-3-8910/blob/main/create_library.py) that would systematically make each tone/noise combination that the AY-3-8910 can produce, and record each as a .wav file.  Well, not quite everything possible; I only used 1 channel for tones (3 are available), and I didn't use any envelope functions.  The number of conditions would have grown exponentially if I had done so, and I wasn't sure how much would be gained through their use.
 
 Next, I recorded the [target speech](https://github.com/nickbild/ay-3-8910/blob/main/greetings_mono.wav), "Greetings, Professor Falken."  I split this into 30 millisecond segments.  That seemed like a reasonable length to me for a minimal amount of sound that is perceivable, but I am making things up as I go along, so...
 
