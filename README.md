@@ -56,8 +56,8 @@ Next, I recorded the [target speech](https://github.com/nickbild/ay-3-8910/blob/
 After this, I generated spectrograms for both the library of AY-3-8910 sounds, and the target sound clips.  Finally, I created another [script](https://github.com/nickbild/ay-3-8910/blob/main/compare_spectrograms.py) that compares each target sound to every available library sound, calculates the mean squared error of the difference, and then reports back the best match (i.e. lowest MSE).
 
 <p align="center">
-<img src="https://github.com/nickbild/ay-3-8910/raw/main/audio_target_spectrograms/greetings_1080-1110.wav.jpg">  
-Spectrogram
+<img src="https://github.com/nickbild/ay-3-8910/raw/main/audio_target_spectrograms/greetings_1080-1110.wav.jpg">
+<br>Spectrogram
 </p>
 
 This results in a sequence of tone/noise segments to run sequentially on the AY-3-8910 to reproduce the target speech.  I did that [here](https://github.com/nickbild/ay-3-8910/blob/main/speech.py).  If you don't have an AY-3-8910 sitting around, you can listen to a .wav of the result [here](https://github.com/nickbild/ay-3-8910/blob/main/greetings_synthesized.wav?raw=true).  It's rough to be sure, but it is distinguishable.  And I don't want it to be too good, or it wouldn't be retro enough...at least that is what I like to tell myself.
