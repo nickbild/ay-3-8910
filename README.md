@@ -68,6 +68,8 @@ While this approach only allows the chip to say one phrase, the next step is fai
 
 ## Media
 
+YouTube: https://www.youtube.com/watch?v=FTPz6hq3iX4
+
 Full setup:
 ![Full Setup](https://github.com/nickbild/ay-3-8910/raw/main/media/full_setup_sm.jpg)
 
