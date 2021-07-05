@@ -66,6 +66,12 @@ While this approach only allows the chip to say one phrase, the next step is fai
 
 ## Media
 
+Full setup:
+[Full Setup](https://github.com/nickbild/ay-3-8910/raw/main/media/full_setup_sm.jpg)
+
+Breadboard:
+[Breadboard](https://github.com/nickbild/ay-3-8910/raw/main/media/breadboard_sm.jpg)
+
 Coming soon.
 
 ## Bill of Materials
