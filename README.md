@@ -56,7 +56,7 @@ Next, I recorded the [target speech](https://github.com/nickbild/ay-3-8910/blob/
 After this, I generated spectrograms for both the library of AY-3-8910 sounds, and the target sound clips.  Finally, I created another [script](https://github.com/nickbild/ay-3-8910/blob/main/compare_spectrograms.py) that compares each target sound to every available library sound, calculates the mean squared error of the difference, and then reports back the best match (i.e. lowest MSE).
 
 <p align="center">
-<img src="https://github.com/nickbild/ay-3-8910/raw/main/audio_target_spectrograms/greetings_1080-1110.wav.jpg">
+<img src="https://github.com/nickbild/ay-3-8910/raw/main/audio_target_spectrograms/greetings_1080-1110.wav.jpg">  
 Spectrogram
 </p>
 
